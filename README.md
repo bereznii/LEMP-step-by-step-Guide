@@ -1,4 +1,4 @@
-# LEMP install on Ubuntu 18.04
+# LEMP setup on Ubuntu 18.04
 
 After setting up LAMP and LEMP on multiple servers, I found a set of perfectly working guides. Googling same things each time is irretional, so I decided to build a step-by-step guide for myself. Maybe it will be useful for someone.
 
@@ -8,7 +8,7 @@ These instructions will get you through each step of installation process of LEM
 
 ### Ubuntu users
 
-Working as root is a bad practice, so I prefer to create new user and add him to sudo group.
+Working as root user is a bad practice, so I prefer to create new user and add him to sudo group.
 
 ```
 $ adduser dev
@@ -140,7 +140,7 @@ $ sudo nginx -t
 $ sudo systemctl reload nginx
 ```
 
-### Laravel project deployment from github repository (may differ for Gitlab and Bitbucket).
+### Laravel project deployment from remote git repository.
 
 Create directory for project.
 ```
@@ -193,6 +193,6 @@ To avoid further possible problems with permissions it is possible to implement 
 
 ## Authors
 
-* **Dmytro Bereznii** - me, PHP developer
+* **Dmytro Bereznii** - me, PHP developer. Hope in future I will make this guide more detailed, versitele. And maybe extend it.
 
 See also my other [projects](https://github.com/bereznii).
