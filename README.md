@@ -92,6 +92,17 @@ $ sudo apt install php7.4-common php7.4-mysql php7.4-xml php7.4-xmlrpc php7.4-cu
 
 ```
 
+Run these command to install PHP8.0 with all needed extensions.
+
+```
+$ sudo apt install software-properties-common
+$ sudo add-apt-repository ppa:ondrej/php
+$ sudo apt update
+$ sudo apt install php8.0-fpm
+$ sudo apt install php8.0-common php8.0-mysql php8.0-xml php8.0-xmlrpc php8.0-curl php8.0-gd php8.0-imagick php8.0-cli php8.0-dev php8.0-imap php8.0-mbstring php8.0-opcache php8.0-soap php8.0-zip php8.0-intl -y
+
+```
+
 ### Composer
 
 ```
@@ -173,8 +184,8 @@ I’m not devops, so for now these permissions settings will be enough (https://
 ```
 $ sudo chown -R $USER:www-data storage
 $ sudo chown -R $USER:www-data bootstrap/cache
-$ chmod -R 775 storage
-$ chmod -R 775 bootstrap/cache
+$ sudo chmod -R 775 storage
+$ sudo chmod -R 775 bootstrap/cache
 ```
 
 Setup Laravel Scheduler.
