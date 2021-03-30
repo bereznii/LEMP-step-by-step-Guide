@@ -158,6 +158,7 @@ Create directory for project.
 $ sudo rm -R /var/www/html
 $ sudo mkdir -p /var/www/bereznii.me
 $ sudo chmod -R 755 /var/www/bereznii.me
+$ sudo chown -R $USER:$USER /var/www/bereznii.me
 ```
 
 Clone project into created directory.
