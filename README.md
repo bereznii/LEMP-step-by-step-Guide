@@ -1,4 +1,4 @@
-# LEMP setup on Ubuntu 18.04
+# LEMP setup on Ubuntu 20.04
 
 After setting up LAMP and LEMP on multiple servers, I found a set of perfectly working guides. Googling same things each time is irretional, so I decided to build a step-by-step guide for myself. Maybe it will be useful for someone.
 
@@ -76,6 +76,7 @@ mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'p
 mysql> CREATE USER 'dev'@'localhost' IDENTIFIED BY 'password';
 mysql> GRANT ALL PRIVILEGES ON * . * TO 'dev'@'localhost';
 mysql> FLUSH PRIVILEGES;
+mysql> CREATE DATABASE mydatabase CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
 mysql> exit;
 ```
 
@@ -204,6 +205,6 @@ To avoid further possible problems with permissions it is possible to implement 
 
 ## Authors
 
-* **Dmytro Bereznii** - me, PHP developer. Hope in future I will make this guide more detailed, versitele. And maybe extend it.
+* **Dmytro Bereznii** - me, PHP developer. Hope in future I will make this guide more detailed, versatile. And, maybe, extend it.
 
 See also my other [projects](https://github.com/bereznii).
