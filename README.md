@@ -129,7 +129,7 @@ $ sudo fallocate -l 1G /swapfile
 $ sudo chmod 600 /swapfile
 $ sudo mkswap /swapfile
 $ sudo swapon /swapfile
-$ sudo nano /etc/fstab - paste there this 'line /swapfile swap swap defaults 0 0'
+$ sudo nano /etc/fstab - paste there this line '/swapfile swap swap defaults 0 0'
 $ sudo swapon --show - to check if succeed
 ```
 
@@ -155,10 +155,9 @@ $ sudo systemctl reload nginx
 
 Create directory for project.
 ```
-$ sudo rm -R html/
+$ sudo rm -R /var/www/html
 $ sudo mkdir -p /var/www/bereznii.me
-$ sudo mkdir -p /var/www/bereznii.me
-$ sudo chmod -R 755 bereznii.me/
+$ sudo chmod -R 755 /var/www/bereznii.me
 ```
 
 Clone project into created directory.
